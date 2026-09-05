@@ -44,9 +44,11 @@
             <a href="#">How it Works</a>
             <a href="#">About</a>
 
-            <button class="upload-btn">
-                ⇧ &nbsp; Upload Video
-            </button>
+            <input type="file" id="videoInput" accept="video/*" hidden>
+
+<button class="upload-btn" id="uploadBtn">
+    ⇧ &nbsp; Upload Video
+</button>
 
         </nav>
 
@@ -144,7 +146,9 @@
 
                         <h3>Uploaded Video</h3>
 
-                        <span>store_incident.mp4 &nbsp; 🗑</span>
+                       <span id="fileName">
+    No video selected
+</span>
 
                     </div>
 
@@ -181,7 +185,10 @@
                         <span>🔊</span>
 
                     </div>
-
+                       <button id="analyzeBtn" class="analyze-btn">
+    Analyze Video
+</button>
+<p id="status"></p>
                 </div>
 
 
@@ -439,9 +446,9 @@
                             <small>00:15</small>
                             <p>Close interaction<br>with cashier</p>
                         </div>
-
+                      
                     </div>
-
+                      
 
                     <button class="report-btn">
                         ⇩ &nbsp; Download Analysis Report
@@ -469,7 +476,7 @@
         </span>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
