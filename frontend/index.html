@@ -1,20 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentinel Vision</title>
+
+    <title>SentinelVision</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header><b>Sentinel<span style="color:blue">Vision</span><p>See threats sooner. Safer tomorrows.</p></b>
-    
-    <div id="navbar">
-    <a href="">Home</a>
-    <a href="">How it works</a>
-    <a href="">About</a>
-    <button id="Upload-btn">⇑ Upload</button>
-    </div>
-</header>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="brand">
+
+            <div class="logo">
+                ◇
+            </div>
+
+            <div>
+                <h1>
+                    Sentinel<span>Vision</span>
+                </h1>
+
+                <p>See threats sooner. Safer tomorrows.</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a class="active" href="#">Home</a>
+            <a href="#">How it Works</a>
+            <a href="#">About</a>
+
+            <button class="upload-btn">
+                ⇧ &nbsp; Upload Video
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- LEFT SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <h2>
+                AI-Powered<br>
+                Visual Safety
+            </h2>
+
+            <p class="subtitle">
+                From passive recording<br>
+                to proactive protection.
+            </p>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">ϟ</div>
+
+                <div>
+                    <h3>Detect</h3>
+                    <p>
+                        Identify people, objects<br>
+                        and suspicious activity.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">♧</div>
+
+                <div>
+                    <h3>Understand</h3>
+                    <p>
+                        Analyze context and<br>
+                        interactions.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">♧</div>
+
+                <div>
+                    <h3>Respond</h3>
+                    <p>
+                        Enable timely alerts<br>
+                        and actions.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+                "Safer people.<br>
+                Stronger communities."
+            </div>
+
+        </aside>
+
+
+        <!-- RIGHT CONTENT -->
+
+        <section class="dashboard">
+
+
+            <!-- TOP ROW -->
+
+            <div class="top-grid">
+
+
+                <!-- VIDEO -->
+
+                <div class="card video-card">
+
+                    <div class="card-header">
+
+                        <h3>Uploaded Video</h3>
+
+                        <span>store_incident.mp4 &nbsp; 🗑</span>
+
+                    </div>
+
+
+                    <div class="video-container">
+
+                        <div class="video-placeholder">
+
+                            <div class="camera-icon">
+                                ◉
+                            </div>
+
+                            <h3>CCTV Video Preview</h3>
+
+                            <p>
+                                Your uploaded video will appear here
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="video-controls">
+
+                        <span>▶</span>
+
+                        <div class="progress">
+                            <div></div>
+                        </div>
+
+                        <span>00:08 / 00:30</span>
+
+                        <span>🔊</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ANALYSIS RESULT -->
+
+                <div class="right-column">
+
+
+                    <div class="card analysis-card">
+
+                        <div class="card-header">
+
+                            <h3>Analysis Result</h3>
+
+                            <span>◷ Analyzed in 12.4 seconds</span>
+
+                        </div>
+
+
+                        <div class="threat-box">
+
+                            <div class="warning">
+                                !
+                            </div>
+
+                            <div>
+
+                                <small>THREAT LEVEL</small>
+
+                                <h2>HIGH RISK</h2>
+
+                                <p>
+                                    Potentially dangerous
+                                    situation detected.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DETECTED ELEMENTS -->
+
+                    <div class="card detected-card">
+
+                        <h3>Detected Elements</h3>
+
+
+                        <div class="elements-grid">
+
+                            <div class="element">
+
+                                <strong>● 2</strong>
+
+                                <span>
+                                    People detected
+                                </span>
+
+                            </div>
+
+
+                            <div class="element">
+
+                                <strong>▱ 1</strong>
+
+                                <span>
+                                    Potentially dangerous object
+                                </span>
+
+                            </div>
+
+
+                            <div class="element">
+
+                                <strong>ϟ</strong>
+
+                                <span>
+                                    Suspicious movement
+                                </span>
+
+                            </div>
+
+
+                            <div class="element">
+
+                                <strong>●●</strong>
+
+                                <span>
+                                    Close interaction with cashier
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM ROW -->
+
+            <div class="bottom-grid">
+
+
+                <!-- OBSERVATIONS -->
+
+                <div class="card">
+
+                    <h3>Key Observations</h3>
+
+                    <ul class="observations">
+
+                        <li>
+                            ◉
+                            Person detected approaching the cashier
+                        </li>
+
+                        <li>
+                            ▱
+                            Potentially dangerous object detected
+                        </li>
+
+                        <li>
+                            ◉
+                            Close proximity observed
+                        </li>
+
+                        <li>
+                            ◇
+                            Threatening gesture detected
+                        </li>
+
+                        <li>
+                            ●●
+                            Multiple people involved
+                        </li>
+
+                        <li>
+                            ◉
+                            Interaction indicates potential robbery
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- RESPONSE -->
+
+                <div class="card">
+
+                    <h3>Recommended Response</h3>
+
+
+                    <div class="response">
+
+                        <div class="response-icon danger">
+                            !
+                        </div>
+
+                        <div>
+                            <strong>Alert authorized personnel</strong>
+
+                            <p>
+                                Notify security or store owner immediately
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="response">
+
+                        <div class="response-icon purple">
+                            ▣
+                        </div>
+
+                        <div>
+                            <strong>Preserve event footage</strong>
+
+                            <p>
+                                Save video and extracted frames
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="response">
+
+                        <div class="response-icon green">
+                            ◉
+                        </div>
+
+                        <div>
+                            <strong>Escalate for human review</strong>
+
+                            <p>
+                                Require human supervisor attention
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="response">
+
+                        <div class="response-icon blue">
+                            ▤
+                        </div>
+
+                        <div>
+                            <strong>Log the event</strong>
+
+                            <p>
+                                Store analysis results and evidence
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIMELINE -->
+
+                <div class="card timeline">
+
+                    <h3>Video Timeline (Key Frames)</h3>
+
+
+                    <div class="frames">
+
+                        <div>
+                            <div class="frame"></div>
+                            <small>00:00</small>
+                            <p>Person enters<br>the store</p>
+                        </div>
+
+
+                        <div>
+                            <div class="frame"></div>
+                            <small>00:08</small>
+                            <p>Object detected</p>
+                        </div>
+
+
+                        <div>
+                            <div class="frame"></div>
+                            <small>00:15</small>
+                            <p>Close interaction<br>with cashier</p>
+                        </div>
+
+                    </div>
+
+
+                    <button class="report-btn">
+                        ⇩ &nbsp; Download Analysis Report
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <span>
+            SentinelVision — A Safer Tomorrow with AI.
+        </span>
+
+        <span>
+            Privacy &nbsp; | &nbsp; Terms &nbsp; | &nbsp; Contact
+        </span>
+
+    </footer>
+
 </body>
+
 </html>
