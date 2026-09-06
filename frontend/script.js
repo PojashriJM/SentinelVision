@@ -31,7 +31,7 @@ analyzeBtn.addEventListener("click", function () {
 
     formData.append("video", file);
 
-   fetch("/analyze", {
+  fetch("/analyze", {
     method: "POST",
     body: formData
 })
@@ -40,8 +40,29 @@ analyzeBtn.addEventListener("click", function () {
 
     console.log(data);
 
-    document.getElementById("status").textContent =
-        data.message;
+    if (data.success) {
+
+        status.textContent = data.message;
+
+        console.log("Video:", data.filename);
+
+        console.log("Video information:", data.video_info);
+
+        console.log("Frames read:", data.frames_read);
+
+    } 
+    else {
+
+        status.textContent = data.message;
+
+    }
+
+})
+.catch(error => {
+
+    console.error("Error:", error);
+
+    status.textContent = "Something went wrong.";
 
 });
 
